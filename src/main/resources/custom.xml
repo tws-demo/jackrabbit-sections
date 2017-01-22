@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<nodeTypes xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+           xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+           xmlns:ocm="http://jackrabbit.apache.org/ocm">
+
+    <nodeType name="ocm:quiz" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
+        <supertypes>
+            <supertype>mix:versionable</supertype>
+            <supertype>nt:base</supertype>
+        </supertypes>
+        <propertyDefinition name="ocm:title" requiredType="String" autoCreated="false" mandatory="true" onParentVersion="COPY" protected="false" multiple="false" />
+        <propertyDefinition name="ocm:definition" requiredType="String" autoCreated="false" mandatory="true" onParentVersion="COPY" protected="false" multiple="false" />
+    </nodeType>
+</nodeTypes>
